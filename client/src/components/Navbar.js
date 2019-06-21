@@ -15,6 +15,7 @@ return(
       			<h1>MovieDB</h1>
     		</div>
    			<div class="col-sm">
+			   <input className="search-bar" placeholder="Please enter movie name"/> 
     		</div>
   				</div>
 			</div>
