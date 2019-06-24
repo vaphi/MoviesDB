@@ -32,9 +32,9 @@ class App extends Component {
 					{<Authentication token={this.state.token} /> }
 					<NavBar/>
 				</header>
-				<Route exact path="/login" render={() => <LoginPage token={this.state.token}/>} />
+				<Route exact path="/" render={() => <LoginPage token={this.state.token}/>} />
 				<Route exact path="/signup" render={() => <SignUpPage token={this.state.token} />} />
-				<Route path="/" component={MovieSearch} token={this.state.token} />
+				<PrivateRoute path="/movieSearch" component={MovieSearch} token={this.state.token} />
 			</div>
 		</BrowserRouter>
 		)
@@ -45,7 +45,7 @@ class App extends Component {
 				<Route path="/dashboard" component={DashboardPage}  />
 				<Route exact path="/navbar" component={NavBar} />
 */
-/*
+
 const PrivateRoute = ({ component: Component, token, ...rest }) => (
 	<Route {...rest} render={props => (
 		token ? (
@@ -58,6 +58,6 @@ const PrivateRoute = ({ component: Component, token, ...rest }) => (
 		)
 	)}/>
 )
-*/
+
 
 export default App;
