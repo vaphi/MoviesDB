@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+require("./routes/api-routes")(app);
 app.use(passport.initialize());
 
 app.post("/login", (req, res) => {

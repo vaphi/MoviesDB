@@ -2,22 +2,23 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "database_development",
+    "database": "movieDBuser",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
+    "database": "moviedbuser",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "r5wuq8fmjnd26k91",
+    "password": "md7pw9lmgnubfwru",
+    "database": "q78cpigo71u96hw8",
+    "host": "ol5tz0yvwp930510.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
 }

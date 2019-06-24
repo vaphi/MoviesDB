@@ -29,14 +29,12 @@ class App extends Component {
 		<BrowserRouter>
 			<div>
 				<header>
-					{/*<Authentication token={this.state.token} /> */}
+					{<Authentication token={this.state.token} /> }
 					<NavBar/>
 				</header>
-				<Route exact path="/" component={MovieSearch} />
-				<Route exact path="/signup" component={SignUpPage} />
-				<Route exact path="/navbar" component={NavBar} />
-				<Route exact path="/login" render={() => <LoginPage />} />
-				<Route path="/dashboard" component={DashboardPage}  />
+				<Route exact path="/login" render={() => <LoginPage token={this.state.token}/>} />
+				<Route exact path="/signup" render={() => <SignUpPage token={this.state.token} />} />
+				<Route path="/" component={MovieSearch} token={this.state.token} />
 			</div>
 		</BrowserRouter>
 		)
@@ -44,17 +42,22 @@ class App extends Component {
 }
 
 /*
+				<Route path="/dashboard" component={DashboardPage}  />
+				<Route exact path="/navbar" component={NavBar} />
+*/
+/*
 const PrivateRoute = ({ component: Component, token, ...rest }) => (
 	<Route {...rest} render={props => (
 		token ? (
 			<Component {...props} token={token} />
 		) : (
 			<Redirect to={{
-				pathname: '/login',
+				pathname: '/',
 				state: { from: props.location }
 			}}/>
 		)
 	)}/>
 )
 */
+
 export default App;
