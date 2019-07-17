@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import '../Misc/css/MoviesSearch.css';
 class MovieSearch extends Component {
 

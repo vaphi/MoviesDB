@@ -29,7 +29,6 @@ class App extends Component {
 		<BrowserRouter>
 			<div>
 				<header>
-					{/*<Authentication token={this.state.token} /> */}
 					<NavBar/>
 				</header>
 				<Route exact path="/" component={MovieSearch} />
@@ -43,7 +42,7 @@ class App extends Component {
 	}
 }
 
-/*
+
 const PrivateRoute = ({ component: Component, token, ...rest }) => (
 	<Route {...rest} render={props => (
 		token ? (
@@ -56,5 +55,5 @@ const PrivateRoute = ({ component: Component, token, ...rest }) => (
 		)
 	)}/>
 )
-*/
+
 export default App;
