@@ -29,10 +29,7 @@ class App extends Component {
 		<BrowserRouter>
 			<div>
 				<header>
-<<<<<<< HEAD
-=======
 					{<Authentication token={this.state.token} /> }
->>>>>>> bf3e97a3938690a7b72367b181ee77bd8f2d08e9
 					<NavBar/>
 				</header>
 				<Route exact path="/" render={() => <LoginPage token={this.state.token}/>} />
@@ -44,13 +41,10 @@ class App extends Component {
 	}
 }
 
-<<<<<<< HEAD
-=======
 /*
 				<Route path="/dashboard" component={DashboardPage}  />
 				<Route exact path="/navbar" component={NavBar} />
 */
->>>>>>> bf3e97a3938690a7b72367b181ee77bd8f2d08e9
 
 const PrivateRoute = ({ component: Component, token, ...rest }) => (
 	<Route {...rest} render={props => (
@@ -65,8 +59,4 @@ const PrivateRoute = ({ component: Component, token, ...rest }) => (
 	)}/>
 )
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bf3e97a3938690a7b72367b181ee77bd8f2d08e9
 export default App;

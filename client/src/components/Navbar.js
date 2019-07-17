@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Micon from '../Misc/images/movieDBicon.png'
 import '../Misc/css/NavBar.css'
-import Authentication from '../components/Authentication'
 import Auth from '../utils/auth';
 
 class MovieSearch extends Component {
@@ -21,7 +20,6 @@ return(
     		</div>
    			<div class="col-sm">
     			</div>
-				{<Authentication token={this.state.token} /> }
   				</div>
 			</div>
 		)
