@@ -77,7 +77,7 @@ class SignUpPage extends Component {
 
     render() {
         if (this.props.token) {
-            return <Redirect to="/movieSearch" />
+            return <Redirect to="/dashboard" />
         }
         return (
             <div className="signupDiv">
