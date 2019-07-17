@@ -29,7 +29,6 @@ class App extends Component {
 		<BrowserRouter>
 			<div>
 				<header>
-					{<Authentication token={this.state.token} /> }
 					<NavBar/>
 				</header>
 				<Route exact path="/" render={() => <LoginPage token={this.state.token}/>} />
